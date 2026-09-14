@@ -16,4 +16,6 @@ todo = [
     }
 ]
 
-print(todo)
+title = input("What do you want to do? ")
+
+print(title)
