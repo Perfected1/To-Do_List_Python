@@ -15,4 +15,9 @@ new_todo = {
 }
 todos.append(new_todo)
 
-print(title)
+for todo in todos:
+    if todo["completed"]:
+        status = "Done"
+    else:
+        status = "Not Done"
+    print(todo["id"], todo["title"], "-", status)
