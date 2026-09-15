@@ -21,3 +21,19 @@ for todo in todos:
     else:
         status = "Not Done"
     print(todo["id"], todo["title"], "-", status)
+
+found = False
+
+todo_id = int(input("Enter ID of Completed Task: "))
+
+for todo in todos:
+
+    if todo["id"] == todo_id:
+
+        todo["completed"] = True
+        found = True
+
+if not found:
+        print("Task not Available!")
+
+print(todo["id"], todo["title"], "-", status)
