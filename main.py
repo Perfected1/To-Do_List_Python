@@ -63,3 +63,18 @@ for todo in todos:
         print("Task updated successfully!")
 if not found:
     print("Task not Available!")
+
+
+# Delete a To-Do Item
+
+found = False
+
+todo_id = int(input("Enter ID of Task to be Deleted: "))
+for todo in todos:
+    if todo["id"] == todo_id:
+        todos.remove(todo)
+        found = True
+
+        print("Task Deleted Successfully!")
+    if not found:
+        print("Task Not Available")
