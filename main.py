@@ -47,7 +47,22 @@ for todo in todos:
 if not found:
         print("Task not Available!")
 
-# print(todo["id"], todo["title"], "-", status)
+# Unmark Task
+
+found = False
+
+todo_id = int(input("Enter ID of Uncompleted Task: "))
+
+for todo in todos:
+
+    if todo["id"] == todo_id:
+
+        todo["completed"] = False
+        found = True
+
+if not found:
+        print("Task not Available!")
+
 
 
 # Edit Existing Task
